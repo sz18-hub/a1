@@ -74,7 +74,8 @@ fun UserScreen(
             }
             else {
                 Text(
-                    text = "Rapid Recall"
+                    text = "Rapid Recall\n"
+                    // TODO: introduction of the rules of the game
                 )
             }
         }
@@ -86,6 +87,14 @@ fun UserScreen(
                 arrayOf("7", "8", "9"),
                 arrayOf("10")
             )
+            Row(modifier = Modifier.align(alignment = Alignment.CenterHorizontally).fillMaxWidth().padding(18.dp)) {
+                Text(
+                    text = "This is a memory game where you memorize a sequence of numbers and enter it correctly after selecting the length.",
+                    lineHeight = 26.sp,
+                    fontSize = 24.sp,
+                    textAlign = TextAlign.Center,
+                )
+            }
             Row(modifier = Modifier
                 .align(alignment = Alignment.CenterHorizontally)
                 .fillMaxWidth()
