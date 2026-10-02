@@ -3,6 +3,11 @@ package com.example.sz18_rapidrecall
 import android.os.Build
 import androidx.annotation.RequiresApi
 
+/**
+* Handles the user, stores everything related to the user
+ * It will generate a new sequence as the target sequence. Then instantiate a Round, check the input sequence against the target sequence.
+ * @param currentRoundIndex the current round index
+ * @param records the list of records*/
 class User(
     var currentRoundIndex: Int = -1,
     val records: MutableList<Record> = mutableListOf<Record>()

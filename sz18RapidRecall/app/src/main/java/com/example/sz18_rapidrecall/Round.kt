@@ -8,7 +8,11 @@ import kotlin.time.Clock
 import kotlin.time.ExperimentalTime
 import kotlin.time.Instant
 
-
+/**
+ * Represents a round of the game.
+ * It is used to check the input sequence against the target sequence.
+ * @param _targetSeq the target sequence
+ * @param _targetLen the length of the target sequence*/
 class Round(
     private val _targetSeq: Sequence,
     private val _targetLen: Int
